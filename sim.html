@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Playground</title>
+  <script src="sim.js"></script>
+</head>
+<body>
+
+<script> 'use strict';
+
+sim([
+  // attacker
+  {
+    type: 'warship',
+    id: 1,
+    amount: 50
+  }, {
+    type: 'warship',
+    id: 2,
+    amount: 4
+  }, {
+    type: 'warship',
+    id: 3,
+    amount: 10
+  }
+], [
+  // defender
+  {
+    type: 'warship',
+    id: 1,
+    amount: 40
+  }, {
+    type: 'defense',
+    id: 1,
+    amount: 20
+  }
+]);
+
+</script>
+</body>
+</html>
