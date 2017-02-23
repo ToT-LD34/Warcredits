@@ -21,6 +21,24 @@ header, footer {
   text-align: center;
 }
 
+.flexbox {
+    display: flex;
+}
+
+aside {
+    width: 25%;
+    margin-right: 15px;
+}
+
+section {
+    width: 75%;
+}
+
+form input {
+    display: block;
+    margin: 10px 0;
+}
+
 .name {
   text-transform: capitalize;
   font-style: normal;
