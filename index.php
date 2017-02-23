@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +10,7 @@
 </head>
 <!-- connect to db -->
 <?php include('db.php'); ?>
+<?php include('functions.php'); ?>
 <body>
   <header>
     <h1>WARCREDITS</h1>
@@ -18,12 +20,7 @@
   <section>
     <div class="inscription">
       <h3>Inscription</h3>
-      <form action="index.html" method="post">
-        <input type="text" name="name" placeholder="Name">
-        <input type="text" name="planet" placeholder="Planet name">
-        <input type="password" name="pwd" placeholder="Password">
-        <input type="submit" value="Create account">
-      </form>
+      <?php include('templates/createuser.php'); ?>
     </div>
     <div class="intro">
     <!-- users list -->

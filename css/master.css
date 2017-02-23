@@ -25,3 +25,11 @@ header, footer {
   text-transform: capitalize;
   font-style: normal;
 }
+
+.alert {
+    color: green;
+}
+
+.error {
+    color: red;
+}
